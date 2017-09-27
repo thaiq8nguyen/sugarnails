@@ -1,0 +1,83 @@
+#general-info{
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: #FFF;
+}
+#about-us{
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+
+
+#hours-table{
+
+    background-color: transparent;
+
+}
+
+#hours-table th, #hours-table td{
+
+    border: 1px solid white ;
+}
+#hours-table th{
+
+    color: #ffffff;
+}
+.content-top-buffer{
+
+    padding-top: 35px;
+
+}
+
+.owl-dots{
+    position: absolute;
+    top:645px;
+    left: 45%;
+}
+.social-media-container{
+    padding:50px;
+}
+.social-media-follower{
+    margin-top: 10px;
+    color: #C1272D !important;
+    font-size: 24px !important;
+}
+.star-rating{
+    color: #C1272D !important;
+    background: transparent;
+}
+.address-container{
+    text-align: left;
+    background: #4CAF50;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-device-width:768px){
+    .social-media-follower{
+        margin-top: 5px;
+        color: #C1272D !important;
+        font-size: 16px !important;
+    }
+    .social-media-container{
+        padding:10px;
+    }
+    .social-media-level{
+        margin-right:10px;
+    }
+    .owl-dots{
+        position: absolute;
+        top:145px;
+        left: 35%;
+    }
+    #general-info{
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');/*Special Item Pricing*/
+
+.strike-through
+{
+    text-decoration: line-through;
+}
+.tile.image-tile
+{
+    background: #ffffff;
+}
+
+.image-container{
+    background: #ffffff;
+    padding:5px;
+}
+.item-image
+{
+    vertical-align: middle;
+    width: 240px;
+    height: 160px;
+}
+#special_items_heading
+{
+    margin:20px;
+}
+
+.special_price_tag
+{
+
+    background: #C1272D;
+    color: #FFFFFF;
+    padding:5px;
+    width:40%;
+    border-color: #C1272D;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: x-large;
+}
+.special_item_name
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    color: indianred;
+    font-weight: bolder;
+}
+.bottom-buffer{
+    margin-bottom: 50px !important;
+}
+.phone-number{
+    font-size: x-large;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media only screen and (max-device-width: 768px){
+
+    .special_price_tag
+    {
+
+        background: #C1272D;
+        color: #FFFFFF;
+        padding:2px;
+        width:90%;
+        border-color: #C1272D;
+        border-radius: 5px;
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: large;
+    }
+}

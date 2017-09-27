@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');/*Special Item Pricing*/
+
+
+.image-container{
+
+    padding: 10px;
+
+
+}
+
+.image-container img{
+
+    vertical-align: middle;
+
+}
+
+#quality-badge{
+
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#quality-badge li{
+
+    margin-bottom: 15px;
+
+}
+
+@media only screen and (max-device-width: 768px){
+
+    .text-description-content{
+        margin: 10px !important;
+    }
+}
