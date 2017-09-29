@@ -6,10 +6,11 @@ use Illuminate\Http\Request;
 
 class DigitalSignageController extends Controller
 {
+    App::for
     public function index(){
 
 
 
-        return response()->view('signage.main')->header('X-Frame-Options', 'ALLOW-FROM https://apps.risevision.com');
+        return response()->view('signage.main')->headers->set('X-Frame-Options', 'SAMEORIGIN', false);
     }
 }
