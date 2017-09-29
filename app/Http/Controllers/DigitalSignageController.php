@@ -11,6 +11,6 @@ class DigitalSignageController extends Controller
 
 
 
-        return response()->view('signage.main')->headers->set('X-Frame-Options', 'SAMEORIGIN', false);
+        return response()->view('signage.main')->header('X-Frame-Options', 'ALLOW-FROM https://apps.risevision.com');
     }
 }
