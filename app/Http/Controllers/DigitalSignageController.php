@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class DigitalSignageController extends Controller
 {
-    App::for
+
     public function index(){
 
 
