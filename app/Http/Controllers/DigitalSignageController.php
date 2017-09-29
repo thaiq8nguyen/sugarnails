@@ -10,7 +10,6 @@ class DigitalSignageController extends Controller
     public function index(){
 
 
-
         return response()->view('signage.main')->header('X-Frame-Options', 'ALLOW-FROM https://apps.risevision.com');
     }
 }
