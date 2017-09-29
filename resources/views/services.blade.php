@@ -230,7 +230,9 @@
                 </div>
             </div>
             <!--Children Items----------------------------------------------------------------------------------------->
+            <p class = "has-text-centered">Price and availability may change without notice. Please ask your technician before service.</p>
         </div>
+
     </section>
 
 @endsection
