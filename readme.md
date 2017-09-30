@@ -1,6 +1,6 @@
 #Sugar Nails Project
 
-![Logo Image](https://github.com/thaiq8nguyen/sugarnails/blob/master/public/images/web_logo_circle.png,"Logo")
+![Logo Image](https://github.com/thaiq8nguyen/sugarnails/blob/master/public/images/web_logo_circle.png)
 
 ## About Repository
 
