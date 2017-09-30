@@ -1,4 +1,22 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+#Sugar Nails Project
+
+![Logo Image](http://wwww.sugarnailspa.com/images/web_logo_circle.png,"Logo")
+
+## About Repository
+
+Sugar Nails is a store front web page for a nail salon in Valley Village, CA.  Initially, the site features three pages:
+- A landing page contains a carousel slider and basic store information.
+- A service page display some of the services offering from this salon.
+- A about page explains the mission and purpose of this salon.
+
+## Technology Stack
+
+- Laravel backend provides menu items in the service page.  MySQL is the database of choice.
+- jQuery provides customer facing UI.
+
+
+
+<!--<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -49,3 +67,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+-->
