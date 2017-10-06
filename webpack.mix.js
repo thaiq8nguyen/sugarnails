@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
 const webpack = require('webpack');
+let bs = require('browser-sync').create();
 
 /*
  |--------------------------------------------------------------------------
@@ -21,12 +22,18 @@ mix.webpackConfig({
         ]
     });
 
-mix.browserSync('sugarnails.dev:8888');
+mix.browserSync({
+    open:'external',
+    proxy:'local.sugarnails.dev:8888'
+});
+
 
 mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/carousel.js','public/js/')
     .js('resources/assets/js/header.js', 'public/js')
-    .js('resources/assets/js/signage.js', 'public/js');
+    .js('resources/assets/js/signage.js', 'public/js')
+    .js('resources/assets/js/feedback.js','public/js')
+    .js('resources/assets/js/passport.js','public/js');
 
 
    /* .sass('resources/assets/sass/app.scss', 'public/css');*/

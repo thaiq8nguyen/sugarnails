@@ -20,3 +20,13 @@ Route::get('/services','SalonServiceController@index')->name('services');
 Route::get('/about','AboutSalonController@index')->name('about');
 
 Route::get('/signage','DigitalSignageController@index')->name('signage');
+
+Route::get('/signage/feedback', 'DigitalSignageController@feedback')->name('feedback');
+
+Route::get('/passport', function(){
+    return view('auth.passport');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -22,3 +22,18 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\CustomerReview::class, function (Faker\Generator $faker) {
+
+
+    return [
+
+        'customer_name' => $faker->name,
+        'review' => $faker->paragraph(1),
+        'social_media' => 'yelp',
+        'category' => 'positive',
+        'review_date' => \Carbon\Carbon::now()->toDateTimeString()
+
+    ];
+});
+

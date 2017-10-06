@@ -1,5 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/passport.js": "/js/passport.js",
+    "/js/feedback.js": "/js/feedback.js",
     "/js/signage.js": "/js/signage.js",
     "/js/carousel.js": "/js/carousel.js",
     "/js/header.js": "/js/header.js"

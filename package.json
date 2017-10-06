@@ -28,7 +28,9 @@
   "author": "Thai Nguyen",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "axios": "^0.16.2",
+    "bootstrap": "^3.3.7",
     "bulma": "^0.5.2",
     "instafeed.js": "^1.4.1",
     "owl.carousel": "^2.2.0",

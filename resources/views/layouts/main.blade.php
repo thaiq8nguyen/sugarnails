@@ -12,6 +12,7 @@
             gtag('config', 'UA-107314429-1');
         </script>
 
+
         <title>@yield('title')</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
