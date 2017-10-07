@@ -13,6 +13,6 @@ class CustomerReview extends Model
      */
     public function scopeLatest($query){
 
-        return $query->orderBy('id','desc')->limit(3);
+        return $query->orderBy('id','desc')->limit(10);
     }
 }
