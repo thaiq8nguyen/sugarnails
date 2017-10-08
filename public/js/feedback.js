@@ -10338,65 +10338,62 @@ module.exports = __webpack_require__(64);
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
-(function () {
+function shuffle(feedbacks) {
+    var currentIndex = feedbacks.length,
+        temporaryValue = void 0,
+        randomIndex = void 0;
 
-    $.ajax({
-        url: '/api/reviews',
-        headers: {
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
 
-            'Accept': 'application/json',
-            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImM3NjBkZGE1MmZiMDZlODk0OGI2NjMwM2I1NzZlZTU0NTU3NDM5ZGU2N2EzMjcwYzY4MDEyOGY0MmI4Y2FmMTBiMGI3M2Q4MGRiOTQwNTJmIn0.eyJhdWQiOiIxIiwianRpIjoiYzc2MGRkYTUyZmIwNmU4OTQ4YjY2MzAzYjU3NmVlNTQ1NTc0MzlkZTY3YTMyNzBjNjgwMTI4ZjQyYjhjYWYxMGIwYjczZDgwZGI5NDA1MmYiLCJpYXQiOjE1MDczMzc3MzIsIm5iZiI6MTUwNzMzNzczMiwiZXhwIjoxNTM4ODczNzMyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.r83gdcg59pQb87MwMbZoh-jW2sDGrqXnGYncd3omZss0NDN-YfhufzHij9Gu-WbtFV5KP8q3sW5oLrK2-24mEPv1-U28JpwMSFqSsSx4pDKGW6qKVEujx9uYTW5KB4578OYOC1-j9KmMPCTGZNgrrAtcErMHvQQnkeER_PZneOyHjj9NRq7v22EKrItExqVIjYYUtXGtw_shfS1lxqwE3EJWMxjzCYRJPpkTsXrDSoht7J_d3tqE2g1LLK0wYDTSo-F7_Kn9B6BeRty7G0Ia9r98AM7T-n97610bislnzH7329JDQUdV1WD2ero5P-H3uiOn4CJH2tyxavpx-TbFPtu7FUaap5YXjYTAKJ00u2MO97b_Tj8IfSCNiSLmH9OQS7M5Nf082hD6y8okqxq323P1IOCMNsPXPP6XzuNmxw7KeMOWrd7Mj1KtUuSSoxTwQlqegx_aTn2EnzfZXq8vtyv1D9pBBDlLD-eIwKi4Fg1v8YjLssYoNgO9Y8PfDp0g9zs1T0OhiuYxxrc-f4RkXKTNldzt364OosB-ZL5xWrMGseliPhADPxWG1a-l8OWUdP_IZuX4TeIIBvyyWdBeUttF_kwP1h-XmP4_Qcy9_IC4TS9y4b2webAGwDLQ42T6SP28uth6aKM4qZv2zJgCSniXybPH_5P0jKDKw8HxAPc' }
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
 
-    }).done(function (feedbacks) {
-        display(feedbacks);
-    });
+        // And swap it with the current element.
+        temporaryValue = feedbacks[currentIndex];
+        feedbacks[currentIndex] = feedbacks[randomIndex];
+        feedbacks[randomIndex] = temporaryValue;
+    }
 
-    var shuffleFeedbacks = function shuffleFeedbacks(feedbacks) {
-        var currentIndex = feedbacks.length,
-            temporaryValue = void 0,
-            randomIndex = void 0;
+    return feedbacks;
+}
+$(function () {
 
-        // While there remain elements to shuffle...
-        while (0 !== currentIndex) {
+    var $container = $('#feedbacks-container');
+    var template = $('#template').html();
+    var $templateClone = $(template);
+    var greeting = '<div class = "media">' + '<div class = "media-left"></div><div class = "media-content">' + '<div class = "content has-text-centered">' + '<p class = "greeting">What our clients have said about Sugar Nails ?</p>' + '</div></div></div>';
 
-            // Pick a remaining element...
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
+    var thanks = '<div class = "media">' + '<div class = "media-left"></div><div class = "media-content">' + '<div class = "content has-text-centered">' + '<p class = "thanks animated zoomIn">Thank You!</p>' + '</div></div></div>';
 
-            // And swap it with the current element.
-            temporaryValue = feedbacks[currentIndex];
-            feedbacks[currentIndex] = feedbacks[randomIndex];
-            feedbacks[randomIndex] = temporaryValue;
-        }
+    play();
+    setInterval(function () {
 
-        return feedbacks;
-    };
+        play();
+    }, 60000);
 
-    var display = function display(feedbacks) {
+    function play() {
 
-        $(document).ready(function () {
-            var $container = $('#feedbacks-container');
-            var feedback = '';
+        var $shuffledFeedbacks = shuffle($templateClone.filter('.media'));
+
+        setTimeout(function () {
+            $container.html('').append(greeting);
+        }, 1000);
+
+        $shuffledFeedbacks.filter('.media').each(function (index, value) {
+            console.log('start');
 
             setTimeout(function () {
-                var shuffled = shuffleFeedbacks(feedbacks);
-
-                var _loop = function _loop(i) {
-                    setTimeout(function () {
-
-                        feedback = '<div class = "media">' + '<div class = "media-left"><img class = "animated fadeInLeft" src = "' + shuffled[i].social_media + '" alt = "logo"></div>' + '<div class = "media-content">' + '<div class = "content has-text-centered">' + '<p class = "animated fadeInDown review">' + shuffled[i].review + '</p>' + '<p class = "animated fadeInUp customer-name">' + shuffled[i].customer_name + '</p>' + '</div>' + '</div>' + '</div>';
-
-                        $container.html('').append(feedback);
-                    }, 5000 * i);
-                };
-
-                for (var i = 0; i < shuffled.length; i++) {
-                    _loop(i);
-                }
-            }, 50000);
+                $container.html('').append(value);
+            }, 5000 * (index + 1));
         });
-    };
-})();
+
+        setTimeout(function () {
+            $container.html('').append(thanks);
+        }, 55000);
+    }
+});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ })

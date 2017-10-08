@@ -25,7 +25,8 @@ Route::get('/signage/feedback', 'DigitalSignageController@feedback')->name('feed
 
 Route::get('/passport', function(){
     return view('auth.passport');
-});
+})->middleware('auth');
+
 
 Auth::routes();
 

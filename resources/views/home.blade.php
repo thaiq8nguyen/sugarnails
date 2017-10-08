@@ -8,13 +8,26 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <div class = "container">
+                        <div class = "row">
+                            <div class = "col-md-3">
+                                @if (session('status'))
+                                    <div class="alert alert-success">
+                                        {{ session('status') }}
+                                    </div>
+                                @endif
 
-                    You are logged in!
+                                <p>You are logged in!</p>
+                            </div>
+                            <div class = "col-md-9">
+
+                                <ul>
+                                    <li><a href="/passport">Passport</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

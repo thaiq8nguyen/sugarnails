@@ -15,9 +15,8 @@ class DigitalSignageController extends Controller
 
     public function feedback(){
 
-
-
-        return view('signage.feedback');
+        $reviews = CustomerReview::latest()->get(['id','customer_name','review','social_media']);
+        return view('signage.feedback')->with('reviews', $reviews);
 
     }
 }
