@@ -23,6 +23,8 @@ Route::get('/signage','DigitalSignageController@index')->name('signage');
 
 Route::get('/signage/feedback', 'DigitalSignageController@feedback')->name('feedback');
 
+Route::get('/signage/thanksgiving', 'DigitalSignageController@thanksgiving')->name('thanksgiving');
+
 Route::get('/passport', function(){
     return view('auth.passport');
 })->middleware('auth');

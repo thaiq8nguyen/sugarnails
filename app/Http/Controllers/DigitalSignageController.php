@@ -19,4 +19,9 @@ class DigitalSignageController extends Controller
         return view('signage.feedback')->with('reviews', $reviews);
 
     }
+
+    public function thanksgiving(){
+
+        return response()->view('signage.thanksgiving');
+    }
 }

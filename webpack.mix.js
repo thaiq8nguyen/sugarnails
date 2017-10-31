@@ -32,6 +32,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/carousel.js','public/js/')
     .js('resources/assets/js/header.js', 'public/js')
     .js('resources/assets/js/signage.js', 'public/js')
+    .js('resources/assets/js/thanksgiving-signage.js','public/js/signages')
     .js('resources/assets/js/feedback.js','public/js')
     .js('resources/assets/js/passport.js','public/js');
 

@@ -1,0 +1,38 @@
+body{
+
+    background: url('/images/signage/signage_thanksgiving.png');
+    width:1920px;
+    height:1080px;
+}
+.image-container{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px 0px #888888;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    height:700px;
+    background: orange;
+
+}
+.image-container image{
+    width: auto;
+    height: auto;
+}
+
+.about-container{
+    position: fixed;
+    bottom: 2%;
+
+}
+.owl-stage-outer{
+
+    left: 20% !important;
+
+}
+.owl-item{
+    padding: 5px;
+}
+.top-buffer{
+    margin-top: 20px;
+}

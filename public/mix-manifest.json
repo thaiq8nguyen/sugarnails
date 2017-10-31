@@ -4,5 +4,6 @@
     "/js/signage.js": "/js/signage.js",
     "/js/carousel.js": "/js/carousel.js",
     "/js/header.js": "/js/header.js",
-    "/js/feedback.js": "/js/feedback.js"
+    "/js/feedback.js": "/js/feedback.js",
+    "/js/signages/thanksgiving-signage.js": "/js/signages/thanksgiving-signage.js"
 }
