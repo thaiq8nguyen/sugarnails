@@ -1,8 +1,31 @@
-body{
+body {
 
+
+}
+#main{
     background: url('/images/signage/signage_thanksgiving.png');
     width:1920px;
     height:1080px;
+}
+.section{
+    padding: 0 !important;
+}
+.bars{
+
+    height:50px;
+    background: linear-gradient(269deg, #6e352c,
+    #cf5230, #f59a44, #e3c598, #6e612f);
+    background-size: 1000% 1000%;
+    animation-name: GradientAnimation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+@keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
 .image-container{
     padding: 5px;

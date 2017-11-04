@@ -12,13 +12,16 @@
 <body>
 
 <section class = "section">
+    <div class = "bars"></div>
+</section>
+<section class = "section" id = "main">
     <div class = "container">
-
         <div id = "instafeed" class = "owl-carousel"></div>
-
     </div>
 </section>
-
+<section class = "section">
+    <div class = "bars"></div>
+</section>
 
 
 </body>
