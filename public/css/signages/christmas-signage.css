@@ -1,0 +1,218 @@
+#main{
+    background: url('/images/signage/signage_christmas.png');
+    width: 1920px;
+    height: 1080px;
+}
+.owl-stage-outer{
+    margin-top: 10px;
+}
+
+
+.image-container{
+    padding: 15px;
+    border: 1px transparent;
+    border-radius: 3px;
+    height:75%;
+    background: #fff8e1;
+
+}
+
+.likes{
+    font-size: 36px;
+}
+/*Light String Style***************************************************************************************************/
+#light-string{
+
+    position: relative;
+    top: -50px;
+
+}
+.string {
+    fill: none;
+    stroke: #056b37;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.6px;
+}
+
+#light_1_color {
+    fill: #86b44e;
+    animation-name: light_1_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes light_1_animation {
+    0% {
+        fill: #86b44e;
+    }
+    50% {
+        fill: #e14244;
+    }
+    100% {
+        fill: #86b44e;
+    }
+}
+#light_2{
+    transform-origin: center top;
+    animation-name: light_2_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+#light_2_color{
+    fill: #ffaf23;
+    animation-name: light_2_color_change;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes light_2_animation {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-40deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes light_2_color_change {
+    0% {
+        fill: #ffaf23;
+    }
+    50% {
+        fill: #85d2e1;
+    }
+    100% {
+        fill: #ffaf23;
+    }
+}
+
+#light_3{
+    transform-origin: top;
+    animation-name: light_3_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes light_3_animation {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+.cls-3 {
+    fill: #056b37;
+}
+
+.cls-4 {
+    fill: #008444;
+}
+
+.cls-5 {
+    fill: #a9c97d;
+}
+
+.cls-6 {
+    fill: #ffaf23;
+}
+#light_7_color{
+    fill: #e14244;
+    animation-name: light_7_color_change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes light_7_color_change {
+    0% {
+        fill: #e14244;
+    }
+    50% {
+        fill: #85d2e1;
+    }
+    100% {
+        fill: #e14244;
+    }
+}
+#light_9{
+    transform-origin: top;
+    animation-name: light_9_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes light_9_animation {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+.cls-7 {
+    fill: #ffca76;
+}
+
+.cls-8 {
+    fill: #85d2e1;
+}
+
+.cls-9 {
+    fill: #cae6ea;
+}
+
+.cls-10 {
+    fill: #e14244;
+}
+
+.cls-11 {
+    fill: #e0898d;
+}
+
+.cls-12 {
+    fill: #463eaf;
+}
+
+.cls-13 {
+    fill: #c5bdff;
+}
+
+.cls-14 {
+    fill: #e81ce8;
+}
+
+.cls-15 {
+    fill: #ffb5ff;
+}
+
+.cls-16 {
+    fill: #e5e528;
+}
+
+.cls-17 {
+    fill: #ffffc1;
+}
+
+.cls-18 {
+    fill: #6b0b6b;
+}
+
+.cls-19 {
+    fill: #ffa4ff;
+}
