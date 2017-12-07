@@ -3,6 +3,7 @@
     "/js/passport.js": "/js/passport.js",
     "/js/signages/thanksgiving-signage.js": "/js/signages/thanksgiving-signage.js",
     "/js/signage.js": "/js/signage.js",
+    "/js/signages/christmas-signage.js": "/js/signages/christmas-signage.js",
     "/js/carousel.js": "/js/carousel.js",
     "/js/header.js": "/js/header.js",
     "/js/feedback.js": "/js/feedback.js"

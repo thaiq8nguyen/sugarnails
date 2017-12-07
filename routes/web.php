@@ -25,6 +25,8 @@ Route::get('/signage/feedback', 'DigitalSignageController@feedback')->name('feed
 
 Route::get('/signage/thanksgiving', 'DigitalSignageController@thanksgiving')->name('thanksgiving');
 
+Route::get('/signage/christmas', 'DigitalSignageController@christmas')->name('christmas');
+
 Route::get('/passport', function(){
     return view('auth.passport');
 })->middleware('auth');
