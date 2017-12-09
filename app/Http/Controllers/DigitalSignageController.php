@@ -29,4 +29,9 @@ class DigitalSignageController extends Controller
 
         return response()->view('signage.christmas');
     }
+
+    public function holidayGiftCard(){
+
+        return response()->view('signage.holiday-giftcard');
+    }
 }
