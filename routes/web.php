@@ -27,6 +27,9 @@ Route::get('/signage/thanksgiving', 'DigitalSignageController@thanksgiving')->na
 
 Route::get('/signage/christmas', 'DigitalSignageController@christmas')->name('christmas');
 
+Route::get('/signage/holiday-giftcard','DigitalSignageController@holidayGiftCard')->name('holiday-giftcard');
+
+
 Route::get('/passport', function(){
     return view('auth.passport');
 })->middleware('auth');
