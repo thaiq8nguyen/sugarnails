@@ -29,6 +29,8 @@ Route::get('/signage/christmas', 'DigitalSignageController@christmas')->name('ch
 
 Route::get('/signage/holiday-giftcard','DigitalSignageController@holidayGiftCard')->name('holiday-giftcard');
 
+Route::get('/signage/new-year','DigitalSignageController@newYear')->name('new-year');
+
 
 Route::get('/passport', function(){
     return view('auth.passport');
