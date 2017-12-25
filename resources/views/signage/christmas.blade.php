@@ -14,9 +14,6 @@
 
 <section class = "section" id = "main">
     <section class = "hero">
-
-
-
         <div id = "light-string">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 98">
 
@@ -121,7 +118,7 @@
 
 
     </section>
-    <div class = "container">
+    <div class = "container" id = "showcase">
         <div id = "instafeed" class = "owl-carousel"></div>
     </div>
 </section>

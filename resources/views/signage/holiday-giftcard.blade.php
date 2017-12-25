@@ -11,7 +11,7 @@
 </head>
 <body>
 
-</section>
+
 <section class = "hero" id = "main">
     {{--<div class = "container">--}}
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">

@@ -7,5 +7,6 @@
     "/js/carousel.js": "/js/carousel.js",
     "/js/header.js": "/js/header.js",
     "/js/feedback.js": "/js/feedback.js",
+    "/js/signages/new-year-signage.js": "/js/signages/new-year-signage.js",
     "/js/signages/holiday-giftcard-signage.js": "/js/signages/holiday-giftcard-signage.js"
 }

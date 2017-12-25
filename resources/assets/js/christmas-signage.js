@@ -11,17 +11,20 @@ $(document).ready(function(){
         template:
         '<div class = "image-container">' +
             '<nav class = "level">' +
-                '<div class = "level-item has-text-centered">' +
+                '<div class = "level-item ">' +
                     '<div>' +
                         '<img src = "../images/signage/elements/web_ornament_ball.png" class = "star-images" alt="star-images">' +
                         '<p class = "likes">{{likes}} likes</p>' +
                     '</div>' +
+                    '<img src = "{{image}}" width="{{width}}" height="{{height}}">' +
 
                 '</div>' +
 
             '</nav>' +
 
-            '<img src = "{{image}}" width="{{width}}" height="{{height}}">' +
+
+
+
 
         '</div>',
         after:function(){
@@ -31,6 +34,7 @@ $(document).ready(function(){
                 items:3,
                 loop:true,
                 margin:10,
+                autoHeight: 'auto',
                 animateOut: 'fadeOut',
                 autoplay:true,
                 autoplaySpeed: 250,
