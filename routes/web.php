@@ -19,7 +19,9 @@ Route::get('/services','SalonServiceController@index')->name('services');
 
 Route::get('/about','AboutSalonController@index')->name('about');
 
-Route::get('/signage','DigitalSignageController@index')->name('signage');
+Route::get('/signage/standard','DigitalSignageController@standard')->name('standard');
+
+Route::get('/signage/halloween','DigitalSignageController@halloween')->name('halloween');
 
 Route::get('/signage/feedback', 'DigitalSignageController@feedback')->name('feedback');
 

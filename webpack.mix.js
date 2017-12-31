@@ -31,7 +31,7 @@ mix.browserSync({
 mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/carousel.js','public/js/')
     .js('resources/assets/js/header.js', 'public/js')
-    .js('resources/assets/js/signage.js', 'public/js')
+    .js('resources/assets/js/standard-signage.js', 'public/js/signages')
     .js('resources/assets/js/thanksgiving-signage.js','public/js/signages')
     .js('resources/assets/js/christmas-signage.js','public/js/signages')
     .js('resources/assets/js/holiday-giftcard-signage.js','public/js/signages')
