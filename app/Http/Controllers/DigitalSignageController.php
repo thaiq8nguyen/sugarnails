@@ -22,6 +22,12 @@ class DigitalSignageController extends Controller
         return response()->view('signage.standard');
     }
 
+
+    public function valentine(){
+
+        return response()->view('signage.valentine');
+
+    }
     public function halloween(){
 
         return response()->view('signage.halloween')->header('X-Frame-Options', 'ALLOW-FROM https://apps.risevision.com');

@@ -10326,42 +10326,7 @@ return jQuery;
 
 /***/ }),
 
-/***/ 57:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(58);
-
-
-/***/ }),
-
-/***/ 58:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_owl_carousel__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_owl_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_owl_carousel__);
-
-
-/*Image Carousel*/
-$(document).ready(function () {
-
-    $('.owl-carousel').owlCarousel({
-
-        loop: true,
-        nav: false,
-        dots: true,
-        items: 1,
-        autoplay: true,
-        animateOut: 'fadeOut'
-
-    });
-});
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 7:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery, jQuery) {/**
@@ -13639,6 +13604,41 @@ $(document).ready(function () {
 })(window.Zepto || __webpack_provided_window_dot_jQuery, window, document);
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 57:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(58);
+
+
+/***/ }),
+
+/***/ 58:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_owl_carousel__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_owl_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_owl_carousel__);
+
+
+/*Image Carousel*/
+$(document).ready(function () {
+
+   $('.owl-carousel').owlCarousel({
+
+      loop: true,
+      nav: false,
+      dots: true,
+      items: 1,
+      autoplay: true,
+      animateOut: 'fadeOut'
+
+   });
+});
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ })
 

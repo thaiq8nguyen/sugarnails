@@ -1,0 +1,138 @@
+
+.cls-1 {
+    isolation: isolate;
+}
+
+.cls-2 {
+    fill: url(#linear-gradient);
+}
+
+.cls-3 {
+    fill: #b71534;
+}
+
+.cls-4 {
+    font-size: 45px;
+    font-family: Ebrima-Bold, Ebrima;
+}
+
+.cls-10, .cls-22, .cls-4, .cls-5 {
+    fill: #fff;
+}
+
+.cls-4, .cls-6 {
+    font-weight: 700;
+}
+
+.cls-11, .cls-17, .cls-21, .cls-23, .cls-4, .cls-5, .cls-6, .cls-8 {
+    letter-spacing: 0.1em;
+}
+
+.cls-15, .cls-25, .cls-5 {
+    font-size: 35px;
+}
+
+.cls-5 {
+    font-family: Ebrima, Ebrima;
+}
+
+.cls-6 {
+    font-size: 80px;
+    font-family: MyriadPro-Semibold, Myriad Pro;
+}
+
+.cls-11, .cls-6 {
+    fill: #ff536d;
+}
+
+.cls-7 {
+    letter-spacing: 0.09em;
+}
+
+.cls-8 {
+    font-size: 180px;
+    fill: #454d69;
+    font-family: Vivaldii, Vivaldi;
+}
+
+.cls-15, .cls-25, .cls-8 {
+    font-style: italic;
+}
+
+.cls-9 {
+    opacity: 0.75;
+    mix-blend-mode: multiply;
+}
+
+.cls-10 {
+    stroke: #ff7bac;
+}
+
+.cls-10, .cls-22 {
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+.cls-11, .cls-23 {
+    font-size: 60px;
+    font-family: Garamond, Garamond;
+}
+
+.cls-12 {
+    letter-spacing: 0.12em;
+}
+
+.cls-13 {
+    fill: #ff3b58;
+}
+
+.cls-14 {
+    fill: #ff7d90;
+}
+
+.cls-15 {
+    fill: #662d91;
+}
+
+.cls-15, .cls-25 {
+    font-family: Garamond-Italic, Garamond;
+    letter-spacing: 0.04em;
+}
+
+.cls-16 {
+    letter-spacing: 0.12em;
+}
+
+.cls-18 {
+    letter-spacing: -0.01em;
+}
+
+.cls-19 {
+    letter-spacing: 0.06em;
+}
+
+.cls-20 {
+    fill: #ccc;
+}
+
+.cls-21 {
+    font-size: 75px;
+    fill: #4d4d4d;
+    font-family: HoboStd, Hobo Std;
+}
+
+.cls-22 {
+    stroke: #ff1d25;
+}
+
+.cls-23 {
+    fill: #ff1d25;
+}
+
+.cls-24 {
+    fill: #93278f;
+}
+
+.cls-25 {
+    fill: #ff7bac;
+}
